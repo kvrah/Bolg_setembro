@@ -1,0 +1,75 @@
+/*Para todas as paginas*/
+
+.menu li{
+    display: inline;
+    padding: 20px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.menu li a:hover{
+    color: deeppink;
+}
+
+.center{
+    text-align: center;
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+}
+/*Estilos da pagina home.html*/
+
+#titulo{
+    font-size: 30px;
+    text-align: center;
+}
+body {
+    color:black; 
+    background-color:cadetblue; 
+}
+h3{
+    color: black;
+    font-size: 20px;
+}
+#posts li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+#posts li a:hover{
+    color: deeppink;
+}
+
+.fundo{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./imagens/fundo2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Estilos da pagina Sobre.html*/
+.container{
+    display: flex;
+    flex-flow: row ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#autor{
+    font-size: 30px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
