@@ -25,15 +25,17 @@
 
     <form class="center" action="/enviar" method="post">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+        <input type="text" id="nome" required onkeyup="validaNome()">
+        <div id="txtNome"></div><br>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" required onkeyup="validaEmail()"><br><br>
+        <div id="txtEmail"></div>
 
         <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-
-        <input style="color: fuchsia; background:black"  type="submit" value="Enviar">
+        <textarea name="mensagem" id="mensagem" rows="4" cols="50" required onkeyup="validaMensagem()"></textarea><br><br>
+        <div id="txtMensagem"></div><br>
+        <button style="color: fuchsia; background:black" onclick="enviar()">Enviar</button>
     </form>
 
     <hr>
@@ -55,5 +57,8 @@
         <p class="center">Desenvolvido por Richard Campos</p>
         <p class="center">copyright 2023, direitos Autorais © </p>
     </footer>
+
+    <script src="./js/script.js">
+    </script>
 </body>
 </html>
